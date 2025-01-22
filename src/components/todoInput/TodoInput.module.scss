@@ -1,0 +1,31 @@
+.wrapper  {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+.input {
+  background-color: #fff;
+  flex: 1;
+  border-radius: 12px;
+  border: 1px solid #000;
+  padding: 9px 14px;
+  height: 40px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  box-sizing: border-box;
+
+  &Error {
+    border-color: #f00;
+  }
+}
+
+.error {
+  position: absolute;
+  top: calc(100%);
+  font-size: 12px;
+  left: 0;
+  color: #f00
+}

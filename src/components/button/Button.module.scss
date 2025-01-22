@@ -1,0 +1,41 @@
+@use 'sass:color';
+
+.btn {
+  width: fit-content;
+  max-width: 100%;
+  word-break: keep-all;
+  white-space: nowrap;
+  font-weight: 500;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:disabled {
+    cursor: default;
+    opacity: .4;
+  }
+}
+
+// Sizes
+.sm {
+  border-radius: 12px;
+  padding: 0 16px;
+  font-size: 16px;
+  height: 40px;
+  max-height: 40px;
+}
+
+//Colors
+.primary {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+
+  &:not(&:disabled, &.loading):hover {
+    background-color: color.adjust(#000, $lightness: 10%);
+  }
+}

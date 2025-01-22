@@ -4,6 +4,9 @@
   align-items: center;
   gap: 16px;
   position: relative;
+  @media screen and (max-width: 767.99px){
+    flex-wrap: wrap;
+  }
 }
 .input {
   background-color: #fff;
@@ -16,9 +19,18 @@
   font-size: 14px;
   font-weight: 500;
   box-sizing: border-box;
+  @media screen and (max-width: 767.99px){
+    width: 100%;
+  }
 
   &Error {
     border-color: #f00;
+  }
+}
+
+.btn {
+  @media screen and (max-width: 767.99px){
+    width: 100%;
   }
 }
 
@@ -27,5 +39,8 @@
   top: calc(100%);
   font-size: 12px;
   left: 0;
-  color: #f00
+  color: #f00;
+  @media screen and (max-width: 767.99px){
+    top: 38px;
+  }
 }

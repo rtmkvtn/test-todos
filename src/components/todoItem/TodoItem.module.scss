@@ -1,13 +1,18 @@
 .wrapper {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #888;
 
   .text {
     flex: 1;
     color: #000;
     font-weight: 500;
+    word-break: break-all;
+    position: relative;
+    top: -2px;
   }
 
   &.completed {
@@ -19,6 +24,11 @@
 
   .rm {
     cursor: pointer;
+    min-width: 20px;
+    opacity: .6;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 

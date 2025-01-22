@@ -76,7 +76,12 @@ const TodoInput = ({ className, onAddCallback }: IProps) => {
       {errors.todo && (
         <p className={styles.error}>{renderError(errors.todo)}</p>
       )}
-      <Button text="Add" type="submit" disabled={Boolean(errors.todo)} />
+      <Button
+        className={styles.btn}
+        text="Add"
+        type="submit"
+        disabled={Boolean(errors.todo)}
+      />
     </form>
   )
 }
